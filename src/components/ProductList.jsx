@@ -41,7 +41,7 @@ const ProductList = () => {
 
         <div className='h-full pt-[4rem] bg-[#d5d7da] text-center  ' >
 
-            <h1 className='font-extrabold text-4xl p-3  text-[#135880]'>   Mens's Collections </h1>
+            <h1 className='font-extrabold text-4xl p-3  text-[#135880]'>   Men's Collections </h1>
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4  h-[auto] p-4 justify-items-center' >
                 {
                     data.slice(0, 4).map((item, id) => {
