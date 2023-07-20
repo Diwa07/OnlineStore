@@ -7,7 +7,7 @@ const Nav = () => {
 
   return (
     
-    <div className='h-[4rem] w-full flex fixed  bg-[#2bb4e0] fixed p-2 justify-between z-[10]'>
+    <div className='h-[4rem] w-screen flex fixed  bg-[#2bb4e0] fixed p-2 justify-between z-[10]'>
       <div className='flex gap-[2rem]'> <Link to="/" >Logo</Link>
       
       <Link to="/"  className='  py-2 text-[black] text-3xl font-bold '>Online_Store</Link>

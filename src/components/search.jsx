@@ -41,15 +41,15 @@ const Search = () => {
         <>
       <Nav/>
       
-            <div className='h-full w-full  bg-[#d5d7da] justify-center  text-center  ' >
-                <div className='text-start font-extrabold  text-4xl p-2     text-[#135880] ml-[7rem]' >        Search Products -
-                    <  input type="search" className='rounded-r mt-[5rem] p-5 w-[700px] text-xl h-[3rem] ml-4 rounded-lg ' placeholder='Enter  a product category' onChange={(e) => setSearch(e.target.value)} /></div>
+            <div className='h-full w-full  bg-[#d5d7da] justify-center md:flex-row text-center   ' >
+                <div className='text-start font-extrabold  text-4xl p-2 md:p-0    text-[#135880] ml-[7rem]' >        Search Products -
+                    <  input type="search" className='rounded-r  md:ml-0 mt-[5rem] p-5 w-[700px] text-xl h-[3rem] ml-4 rounded-lg ' placeholder='Enter  a product category' onChange={(e) => setSearch(e.target.value)} /></div>
 
 
                 
 
 
-                <div className='grid grid-cols-3   p-4 pl-[140px] ' >
+                <div className='md:grid grid-cols-3 grid-cols-1  md:pl-0 p-4 pl-[140px] ' >
                     {
                         products.filter(item => {
                             const searchTerm = search.toLowerCase();
@@ -60,6 +60,7 @@ const Search = () => {
                                 return (
                                     <div className='grid-cols-1 border border-[#a0a0a0]    h-[auto]  w-[20.5rem]  h-auto mb-[3rem] bg-white rounded-xl '>
                                 <div className=' h-[auto]  w-[18rem] mx-[1rem] mt-[1rem]  mb-[0.7rem]   rounded-xl  '>
+
                                     <Link to={`/products/${item.id}`}>
                                         <img src={item.image} alt='load' className='h-[20rem] w-full    hover:scale-[1.12] transform transition-all rounded-xl ' />
                                     </Link>
@@ -87,7 +88,7 @@ const Search = () => {
                            </div>
                                 )
                             })
-                    }
+                    } 
 
                 </div>
 

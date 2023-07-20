@@ -34,7 +34,7 @@ return (<>
 <h1 className='text-3xl'> Product Details</h1>
     <div className=' h-auto  grid grid-cols-1   p-5 '   > 
 
-                        <div className='mt-[3rem] pl-[-10px] h-[auto] flex flex-row  grid grid-cols-2 w-auto mr-8 bg-white rounded-xl '>
+                        <div className='mt-[3rem] pl-[-10px] h-[auto] flex flex-row  grid grid-cols-1 md:grid-cols-2 w-auto mr-8 bg-white rounded-xl '>
                             
                            <div className='  flex-column mt-[-4] pl-[-10px] h-full w-auto bg-white  rounded-xl p-7 pt-4 '>
                            <h1 className='text-[#135880] font-extrabold  ml-[2rem] mb-7 break-normal text-4xl '>{data.title} </h1>
